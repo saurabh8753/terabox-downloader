@@ -1,0 +1,28 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <title>TeraBox Downloader</title>
+  <link rel="stylesheet" href="/css/global.css">
+</head>
+<body>
+  <main class="wrap">
+    <h1>TeraBox Downloader</h1>
+    <div class="input-row">
+      <input id="urlInput" type="url" placeholder="Paste Terabox link...">
+      <button id="fetchBtn">Fetch</button>
+    </div>
+
+    <div id="status" class="muted"></div>
+
+    <div id="result" class="hidden">
+      <div id="fileInfo"></div>
+      <div id="streams"></div>
+      <video id="player" controls style="max-width:100%;display:none;"></video>
+    </div>
+  </main>
+
+  <script src="/js/app.js"></script>
+</body>
+</html>
